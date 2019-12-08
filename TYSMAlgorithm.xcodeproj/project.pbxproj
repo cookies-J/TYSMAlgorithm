@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		147DFC9D2395531A00362F2E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 147DFC9C2395531A00362F2E /* main.m */; };
+		147DFC9D2395531A00362F2E /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 147DFC9C2395531A00362F2E /* main.c */; };
+		147DFCE4239D20F900362F2E /* array_queue.c in Sources */ = {isa = PBXBuildFile; fileRef = 147DFCE3239D20F900362F2E /* array_queue.c */; };
+		147DFCEA239D2ECF00362F2E /* leecode_724.c in Sources */ = {isa = PBXBuildFile; fileRef = 147DFCE9239D2ECF00362F2E /* leecode_724.c */; };
+		147DFCEF239D409C00362F2E /* 15_besearch.c in Sources */ = {isa = PBXBuildFile; fileRef = 147DFCEE239D409C00362F2E /* 15_besearch.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +27,13 @@
 
 /* Begin PBXFileReference section */
 		147DFC992395531A00362F2E /* TYSMAlgorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TYSMAlgorithm; sourceTree = BUILT_PRODUCTS_DIR; };
-		147DFC9C2395531A00362F2E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		147DFC9C2395531A00362F2E /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		147DFCE2239D20F900362F2E /* array_queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = array_queue.h; sourceTree = "<group>"; };
+		147DFCE3239D20F900362F2E /* array_queue.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = array_queue.c; sourceTree = "<group>"; };
+		147DFCE8239D2ECF00362F2E /* leecode_724.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = leecode_724.h; sourceTree = "<group>"; };
+		147DFCE9239D2ECF00362F2E /* leecode_724.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = leecode_724.c; sourceTree = "<group>"; };
+		147DFCED239D409C00362F2E /* 15_besearch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 15_besearch.h; sourceTree = "<group>"; };
+		147DFCEE239D409C00362F2E /* 15_besearch.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 15_besearch.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +66,31 @@
 		147DFC9B2395531A00362F2E /* TYSMAlgorithm */ = {
 			isa = PBXGroup;
 			children = (
-				147DFC9C2395531A00362F2E /* main.m */,
+				147DFCEC239D407100362F2E /* study */,
+				147DFCEB239D406200362F2E /* leecode */,
+				147DFC9C2395531A00362F2E /* main.c */,
 			);
 			path = TYSMAlgorithm;
+			sourceTree = "<group>";
+		};
+		147DFCEB239D406200362F2E /* leecode */ = {
+			isa = PBXGroup;
+			children = (
+				147DFCE8239D2ECF00362F2E /* leecode_724.h */,
+				147DFCE9239D2ECF00362F2E /* leecode_724.c */,
+			);
+			path = leecode;
+			sourceTree = "<group>";
+		};
+		147DFCEC239D407100362F2E /* study */ = {
+			isa = PBXGroup;
+			children = (
+				147DFCE2239D20F900362F2E /* array_queue.h */,
+				147DFCE3239D20F900362F2E /* array_queue.c */,
+				147DFCED239D409C00362F2E /* 15_besearch.h */,
+				147DFCEE239D409C00362F2E /* 15_besearch.c */,
+			);
+			path = study;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +150,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				147DFC9D2395531A00362F2E /* main.m in Sources */,
+				147DFCEA239D2ECF00362F2E /* leecode_724.c in Sources */,
+				147DFC9D2395531A00362F2E /* main.c in Sources */,
+				147DFCE4239D20F900362F2E /* array_queue.c in Sources */,
+				147DFCEF239D409C00362F2E /* 15_besearch.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,7 +273,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6SLD7TW6TA;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -249,7 +283,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6SLD7TW6TA;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
